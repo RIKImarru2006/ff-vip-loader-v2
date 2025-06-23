@@ -1,36 +1,35 @@
-
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FF VIP | ลากหัว 100%</title>
+  <meta charset="UTF-8">
+  <title>RIKI VIP</title>
   <style>
     body {
       background-color: black;
-      color: red;
-      font-family: 'Courier New', monospace;
-      text-align: center;
-      padding-top: 20%;
-    }
-    h1 {
-      font-size: 2.5em;
-      animation: glow 1s infinite alternate;
-    }
-    p {
       color: white;
-      font-size: 1.2em;
-      margin-top: 20px;
+      text-align: center;
+      font-family: monospace;
+      padding-top: 40%;
     }
-    @keyframes glow {
-      from { text-shadow: 0 0 10px red; }
-      to { text-shadow: 0 0 25px white; }
+    .red {
+      color: red;
+      font-size: 24px;
+      text-shadow: 0 0 10px red;
+    }
+    .white {
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
-  <h1>🎯 กำลังเชื่อมระบบลากหัว...</h1>
-  <p>VIP CONFIG โดย RIKI MODZ</p>
-  <p>โปรดรอสักครู่...</p>
+  <div class="red" id="status">🎯 กำลังเชื่อมระบบลากหัว...</div>
+  <div class="white">VIP CONFIG โดย RIKI MODZ</div>
+  <div class="white">โปรดรอสักครู่...</div>
+
+  <script>
+    setTimeout(() => {
+      document.getElementById("status").innerText = "✅ เชื่อมต่อแล้ว!";
+    }, 3000); // 3 วินาที
+  </script>
 </body>
 </html>
