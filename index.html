@@ -8,16 +8,19 @@
       background-color: black;
       color: white;
       text-align: center;
-      font-family: monospace;
-      padding-top: 40%;
+      font-family: 'Prompt', sans-serif;
+      padding-top: 30%;
     }
     .red {
       color: red;
-      font-size: 24px;
-      text-shadow: 0 0 10px red;
+      font-size: 36px;
+      font-weight: bold;
+      text-shadow: 0 0 15px red;
+      margin-bottom: 20px;
     }
     .white {
-      margin-top: 20px;
+      font-size: 20px;
+      margin-top: 10px;
     }
   </style>
 </head>
@@ -28,8 +31,8 @@
 
   <script>
     setTimeout(() => {
-      document.getElementById("status").innerText = "✅ เชื่อมต่อแล้ว!";
-    }, 3000); // 3 วินาที
+      document.getElementById("status").innerHTML = "✅ <span style='color:red'>เชื่อมต่อแล้ว!</span>";
+    }, 3000);
   </script>
 </body>
 </html>
